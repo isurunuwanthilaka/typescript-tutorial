@@ -1,0 +1,12 @@
+{
+  "name": "learning-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node_modules\\.bin\\concurrently -k -n \"COMPILER,NODEMON\" -c \"yellow,blue\" \"tsc -w\" \"nodemon -w dist -q dist/index.js\""
+  },
+  "author": "",
+  "license": "ISC"
+}
